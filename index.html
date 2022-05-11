@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space X ITSI</title>
+</head>
+
+<body>
+    <img src="img/logo copy.png" />
+    <button id="open_info1">Ships parameters</button>
+    <button id="open_info2">Ships environment</button>
+    <button id="open_info3">Supplies</button>
+
+    <div class="container1" id="container1">
+        <div class="parameters">
+            <h1>Ships parameters</h1>
+            <ul>
+                <li>Fuel <span class="decrease" id="fuel">0</span>
+                </li>
+                <li>Speed <span class="increase" id="speed">0</span> </li>
+            </ul>
+            <button class="close" id="close_info1">Back</button>
+        </div>
+    </div>
+    <div class="container2" id="container2">
+        <div class="environment">
+            <h1>Ships environment</h1>
+            <ul>
+                <li>Distance traveled<span class="decrease" id="distance" data-rate="5,040,000"> 0</span>
+                </li>
+                <li>Gravity <span class="decrease" id="gravity" data-rate="9.81">0</span>
+                </li>
+            </ul>
+            <button class="close" id="close_info2">Back</button>
+        </div>
+    </div>
+    <div class="container3" id="container3">
+        <div class="supplies">
+            <h1>Supplies</h1>
+            <ul>
+                <li>Food storage <span class="decrease" id="food" data-rate="100">0</span></li>
+                <li>Water<span class="decrease" id="water" data-rate="100">0</span></li>
+            </ul>
+            <button class="close" id="close_info3">Back</button>
+        </div>
+    </div>
+</body>
+
+</html>
